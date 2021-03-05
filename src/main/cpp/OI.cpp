@@ -4,21 +4,26 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-
+#include "commands/Joystick_drive.h"
 #include "OI.h"
 
-OI::OI() {
-  // Initialize all of your commands and subsystems here
-   Driverjoystick.reset( new frc::Joystick(0));
-  for( int i=1; i >= 10; i++){
-      Driverbtns.push_back(new frc2::JoystickButton(Driverjoystick.get(), i));
-  }
-  drive.SetDefaultComand(JoystickDrive(&drive, Driverjoystick));
-
+OI::OI(){
+  m_drive.SetDefaultCommand(Joystick_drive(
+      [this] { return m_joy.GetY(frc::GenericHID::JoystickHand::kLeftHand); },
+      [this] { return m_joy.GetY(frc::GenericHID::JoystickHand::kRightHand); },
+      &m_drive));
   // Configure the button bindings
   ConfigureButtonBindings();
 }
 
 void OI::ConfigureButtonBindings() {
   
+}
+
+float OI::DRAxis() {
+  return Driverjoystick->GetRawAxis(5);
+}
+
+float OI::DLAxis() {
+  return Driverjoystick->GetRawAxis(1);
 }

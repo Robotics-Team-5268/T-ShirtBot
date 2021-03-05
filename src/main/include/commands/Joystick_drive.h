@@ -9,7 +9,7 @@
 
 #include <frc2/command/CommandBase.h>
 #include <frc2/command/CommandHelper.h>
-#include <frc/Joystick.h>
+
 #include "subsystems/Drive.h"
 
 /**
@@ -19,10 +19,11 @@
  * directly; this is crucially important, or else the decorator functions in
  * Command will *not* work!
  */
-class JoystickDrive
-    : public frc2::CommandHelper<frc2::CommandBase, JoystickDrive> {
+class Joystick_drive
+    : public frc2::CommandHelper<frc2::CommandBase, Joystick_drive> {
  public:
-  JoystickDrive(Drive *drive, const std::shared_ptr<frc::Joystick> Driverjoystick);
+  Joystick_drive(std::function<double()> left, std::function<double()> right,
+            Drive* m_drive);
 
   void Initialize() override;
 
@@ -32,8 +33,7 @@ class JoystickDrive
 
   bool IsFinished() override;
  private:
-  Drive *drive;
-  std::shared_ptr<frc::Joystick> Driverjoystick;
-
-
+  std::function<double()> m_left;
+  std::function<double()> m_right;
+  Drive* m_drive;
 };

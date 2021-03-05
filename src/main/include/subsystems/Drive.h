@@ -8,9 +8,15 @@
 #pragma once
 
 #include <frc2/command/SubsystemBase.h>
-#include "OI.h"
+#include <frc/drive/DifferentialDrive.h>
+#include <frc/SpeedControllerGroup.h>
 #include <ctre/Phoenix.h>
 
+#include "OI.h"
+#include "RobotMap.h"
+namespace frc{
+class Joystick; 
+}
 class Drive : public frc2::SubsystemBase {
  public:
   
@@ -24,14 +30,15 @@ class Drive : public frc2::SubsystemBase {
 	WPI_TalonSRX speedControllerBR{DRIVE_SPEED_CONTROLLER_BR_CHANNEL};
 	frc::SpeedControllerGroup rightSC{speedControllerFR, speedControllerBR};
 
+  frc::DifferentialDrive diffDrive{leftSC, rightSC};
   /**
    * Will be called periodically whenever the CommandScheduler runs.
    */
   void Periodic();
 
  private:
-  // Components (e.g. motor controllers and sensors) should generally be
+  // Components (e.g. motor c ontrollers and sensors) should generally be
   // declared private and exposed only through public methods.
-   virtual void setMotors(float l_speed, float r_speed);
-
+  
+  
 };

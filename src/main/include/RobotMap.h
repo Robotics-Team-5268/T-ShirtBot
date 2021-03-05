@@ -25,4 +25,4 @@
 #define SCFL_INVERTED false
 #define SCBL_INVERTED false
 #define SCFR_INVERTED false
-#define SCBR_INVERTED falses
+#define SCBR_INVERTED false

@@ -7,24 +7,26 @@
 
 #include "subsystems/Drive.h"
 
+#include "RobotMap.h"
+#include <frc/Joystick.h>
+
+
 
 // To Do: Set up Invert
 
 Drive::Drive() {
-    mOldLeftSpeed = 0.0;
-	mOldRightSpeed = 0.0;
 
-    mspeedControllerFL.SetInvert(SCFL_INVERTED);
-    mspeedControllerFR.SetInvert(SCFR_INVERTED);
-    mspeedControllerBL.SetInvert(SCBL_INVERTED);
-    mspeedControllerBR.SetInvert(SCBR_INVERTED);
+    speedControllerFL.SetInverted(SCFL_INVERTED);
+    speedControllerFR.SetInverted(SCFR_INVERTED);
+    speedControllerBL.SetInverted(SCBL_INVERTED);
+    speedControllerBR.SetInverted(SCBR_INVERTED);
 }
 
 void Drive::setMotors(float leftSpeed, float rightSpeed) {
-    mDiffDrive.TankDrive(leftSpeed, rightSpeed, false);
+    diffDrive.TankDrive(leftSpeed, rightSpeed, false);
 }
 
-
-
 // This method will be called once per scheduler run
-void Drive::Periodic() {}
+void Drive::Periodic() {
+    
+}

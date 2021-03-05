@@ -12,10 +12,8 @@
 #include <frc/Joystick.h>
 #include <frc2/command/button/JoystickButton.h>
 
-#include <frc/WPILib.h>
 
 #include "subsystems/Drive.h"
-#include "commands/JoystickDrive.h"
 
 /**
  * This class is where the bulk of the robot should be declared.  Since
@@ -24,16 +22,19 @@
  * scheduler calls).  Instead, the structure of the robot (including subsystems,
  * commands, and button mappings) should be declared here.
  */
-class OI
-{
+class OI {
 public:
   OI();
-
+  float DLAxis();
+  float DRAxis();
+  frc2::Command* GetAutonomousCommand();
 
 private:
   // The robot's subsystems and commands are defined here...
+  frc::Joystick m_joy{0};
   std::shared_ptr<frc::Joystick> Driverjoystick;
   std::vector<frc2::JoystickButton *> Driverbtns;
-  Drive drive;
+  Drive m_drive;
   void ConfigureButtonBindings();
+  
 };

@@ -4,25 +4,22 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
-#include "OI.h"
-#include "commands/JoystickDrive.h"
 
-JoystickDrive::JoystickDrive( Drive * drive, std::shared_ptr<frc::joystick>& Joystick) {
+#include "commands/Joystick_drive.h"
+
+Joystick_drive::Joystick_drive( std::function<double()> left, std::function<double()> right, Drive* drive)
+    : m_left(left), m_right(right), m_drive(drive) {
   // Use addRequirements() here to declare subsystem dependencies.
-  SetName("drivew/joystick");
-  AddRequirements(drive);
 }
 
 // Called when the command is initially scheduled.
-void JoystickDrive::Initialize() {}
+void Joystick_drive::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
-void JoystickDrive::Execute() {
-  drive->setMotors(Driverjoystick->GetRawAxes(1), Driverjoystick->GetRawAxes(5));
-}
+void Joystick_drive::Execute() {}
 
 // Called once the command ends or is interrupted.
-void JoystickDrive::End(bool interrupted) {}
+void Joystick_drive::End(bool interrupted) {}
 
 // Returns true when the command should end.
-bool JoystickDrive::IsFinished() { return false; }
+bool Joystick_drive::IsFinished() { return false; }
