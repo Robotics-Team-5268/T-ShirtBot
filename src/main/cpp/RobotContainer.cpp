@@ -1,6 +1,6 @@
 
 #include "RobotContainer.h"
-
+#include "commands/move_flag.h"
 #include "commands/DriveWithJoystick.h"
 
 RobotContainer::RobotContainer() : autonomousCommand(&subsystem) {
@@ -17,6 +17,9 @@ RobotContainer::RobotContainer() : autonomousCommand(&subsystem) {
 
 void RobotContainer::ConfigureButtonBindings() {
   // Configure your button bindings here
+  driverBtns[0]->WhileHeld(new move_flag(&mflag)); 
+  
+
 }
 
 frc2::Command* RobotContainer::GetAutonomousCommand() {

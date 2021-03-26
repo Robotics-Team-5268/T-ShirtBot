@@ -8,6 +8,7 @@
 #include "commands/ExampleCommand.h"
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/Drive.h"
+#include "subsystems/Flag.h"
 
 class RobotContainer {
  public:
@@ -21,7 +22,8 @@ class RobotContainer {
   ExampleCommand autonomousCommand;
 
   Drive drive;
-
+  Flag mflag;
+  
   std::shared_ptr<frc::Joystick> driverJoystick;
   std::vector<frc2::JoystickButton*> driverBtns;
 

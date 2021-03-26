@@ -32,7 +32,7 @@
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-      "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\",
+      "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\a0c90a785a654f6a73456c81ed12bd6e\\wpilibc-cpp-2020.3.2-sources\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\aca10e3b8404f80b35c6d6aebf3a7d53\\ntcore-cpp-2020.3.2-sources\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\f7986e5360a1260c0a4fa2c28ecc0365\\hal-cpp-2020.3.2-sources\\",
@@ -71,7 +71,7 @@
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-      "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+      "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
     ],
     "binaries": [
       {
@@ -80,7 +80,7 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\cpp\\"
+                "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\cpp\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -90,7 +90,7 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+                "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -136,7 +136,7 @@
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-          "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+          "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -146,7 +146,7 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\cpp\\"
+            "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\cpp\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -178,7 +178,7 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+            "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -245,7 +245,7 @@
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-      "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\",
+      "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\a0c90a785a654f6a73456c81ed12bd6e\\wpilibc-cpp-2020.3.2-sources\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\aca10e3b8404f80b35c6d6aebf3a7d53\\ntcore-cpp-2020.3.2-sources\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\f7986e5360a1260c0a4fa2c28ecc0365\\hal-cpp-2020.3.2-sources\\",
@@ -284,7 +284,7 @@
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
       "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-      "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+      "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
     ],
     "binaries": [
       {
@@ -293,7 +293,7 @@
           {
             "source": {
               "srcDirs": [
-                "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\cpp\\"
+                "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\cpp\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -303,7 +303,7 @@
             },
             "exportedHeaders": {
               "srcDirs": [
-                "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+                "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
               ],
               "includes": [
                 "**/*.cpp",
@@ -349,7 +349,7 @@
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\5300d3a5512e8a22a730cc7fa910ac0d\\platform-stub-5.18.3-headers\\",
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\36a0d11d327d9cf4d6fe2a943b2093b9\\core-5.18.3-headers\\",
           "C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\07d59ebd6b9d0ec2216b937905ea0d46\\wpilibNewCommands-cpp-2020.3.2-headers\\",
-          "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+          "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
         ],
         "sharedLibrary": false,
         "executable": true
@@ -359,7 +359,7 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\cpp\\"
+            "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\cpp\\"
           ],
           "includes": [
             "**/*.cpp",
@@ -391,7 +391,7 @@
       {
         "source": {
           "srcDirs": [
-            "C:\\Users\\osrobotics\\Documents\\VSCode\\Project\\src\\main\\include\\"
+            "C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\src\\main\\include\\"
           ],
           "includes": [
             "**/*.cpp",
