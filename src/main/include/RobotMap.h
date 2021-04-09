@@ -5,7 +5,7 @@
 #define DRIVE_SPEED_CONTROLLER_BL_CHANNEL 0
 #define DRIVE_SPEED_CONTROLLER_BR_CHANNEL 2
 
-#define Talon_Motor 0
+#define TALON_MOTOR 0
 
 #define SCFL_INVERTED false
 #define SCBL_INVERTED false

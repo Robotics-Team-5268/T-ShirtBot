@@ -2,8 +2,9 @@
 #include "RobotContainer.h"
 #include "commands/move_flag.h"
 #include "commands/DriveWithJoystick.h"
+#include "commands/DriveForward.h"
 
-RobotContainer::RobotContainer() : autonomousCommand(&subsystem) {
+RobotContainer::RobotContainer() : AutonomousCommand(&subsystem) {
   // Initialize all of your commands and subsystems here
   driverJoystick.reset(new frc::Joystick(0));
   for (int i=1; i<=10; i++){
@@ -17,12 +18,12 @@ RobotContainer::RobotContainer() : autonomousCommand(&subsystem) {
 
 void RobotContainer::ConfigureButtonBindings() {
   // Configure your button bindings here
-  driverBtns[0]->WhileHeld(new move_flag(&mflag)); 
+  driverBtns[0]->WhileHeld(new move_flag(&mflag));
+  driverBtns[1]->WhileHeld(new DriveForward(&drive)); 
   
-
 }
 
 frc2::Command* RobotContainer::GetAutonomousCommand() {
   // An example command will be run in autonomous
-  return &autonomousCommand;
+  return &AutonomousCommand;
 }

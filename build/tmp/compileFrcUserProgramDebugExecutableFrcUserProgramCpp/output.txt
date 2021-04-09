@@ -1,6 +1,20 @@
 See file:///C:/Users/osrobotics/Desktop/c++VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
-compiling move_flag.cpp successful.
+compiling ExampleCommand.cpp successful.
+
+compiling DriveWithJoystick.cpp successful.
+
+compiling DriveForward.cpp successful.
+
+compiling ExampleSubsystem.cpp successful.
+
+compiling Drive.cpp successful.
 
 compiling RobotContainer.cpp successful.
+
+compiling Flag.cpp successful.
+
+compiling Robot.cpp successful.
+
+compiling move_flag.cpp successful.
 
 Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Desktop/c++VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

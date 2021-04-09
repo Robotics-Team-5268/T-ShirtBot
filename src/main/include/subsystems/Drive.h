@@ -6,6 +6,10 @@
 #include <ctre/Phoenix.h>
 #include <RobotMap.h>
 
+
+#include <frc/Talon.h>
+
+
 class Drive : public frc2::SubsystemBase {
  public:
   Drive();
@@ -24,6 +28,10 @@ class Drive : public frc2::SubsystemBase {
 	frc::SpeedControllerGroup RightSC{speedControllerFR, speedControllerBR};
 
 	frc::DifferentialDrive diffDrive{LeftSC, RightSC};
+
+
+
+	
 
 	float oldSpeedLeft = 0;
 	float oldSpeedRight = 0;

@@ -19,7 +19,7 @@ class RobotContainer {
  private:
   // The robot's subsystems and commands are defined here...
   ExampleSubsystem subsystem;
-  ExampleCommand autonomousCommand;
+  ExampleCommand AutonomousCommand;
 
   Drive drive;
   Flag mflag;
