@@ -5,27 +5,33 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "commands/move_flag.h"
+#include "commands/MoveDoubleSolenoid.h"
 
-move_flag::move_flag( Flag* aflag )
-    : mflag( aflag ) {
-  // Use addRequirements() here to declare subsystem dependencies.
-  SetName( "move_flag" );
-   AddRequirements( mflag );
+MoveDoubleSolenoid::MoveDoubleSolenoid(Pneumatics* mpneumatics, bool mstate) 
+: pneumatics(mpneumatics),
+state(mstate) 
+{
+  SetName("MoveDoubleSolenoid");
+  AddRequirements(pneumatics);
 }
 
 // Called when the command is initially scheduled.
-void move_flag::Initialize() {}
+void MoveDoubleSolenoid::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
-void move_flag::Execute() {
-  mflag->Move(1.0);
+void MoveDoubleSolenoid::Execute() 
+{
+  if(state){
+    pneumatics->Double_Solenoid_Forward();
+  }
+  else{
+    pneumatics->Double_Solenoid_Backward();
+  }
+
 }
 
 // Called once the command ends or is interrupted.
-void move_flag::End(bool interrupted) {
-  mflag->Move(0.0);
-}
+void MoveDoubleSolenoid::End(bool interrupted) {}
 
 // Returns true when the command should end.
-bool move_flag::IsFinished() { return false; }
+bool MoveDoubleSolenoid::IsFinished() { return false; }

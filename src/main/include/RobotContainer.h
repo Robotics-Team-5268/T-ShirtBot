@@ -9,6 +9,7 @@
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/Drive.h"
 #include "subsystems/Flag.h"
+#include "subsystems/Pneumatics.h"
 
 class RobotContainer {
  public:
@@ -23,6 +24,7 @@ class RobotContainer {
 
   Drive drive;
   Flag mflag;
+  Pneumatics mpneumatics;
   
   std::shared_ptr<frc::Joystick> driverJoystick;
   std::vector<frc2::JoystickButton*> driverBtns;

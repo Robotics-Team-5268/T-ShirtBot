@@ -7,6 +7,11 @@
 
 #define TALON_MOTOR 0
 
+#define PCM 0
+#define DOUBLE_SOLENOID_REVERSE_CHANNEL 0
+#define DOUBLE_SOLENOID_FORWARD_CHANNEL 1
+#define SINGLE_SOLENOID 2
+
 #define SCFL_INVERTED false
 #define SCBL_INVERTED false
 #define SCFR_INVERTED false

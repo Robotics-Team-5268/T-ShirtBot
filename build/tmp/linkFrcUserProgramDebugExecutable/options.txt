@@ -3,10 +3,13 @@ C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\exe\\frcUserPro
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\1heguct63s1n8xc8vetgx92dg\\Flag.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\2gl77zdx123uzm0wrmw4i8eqe\\DriveForward.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\3bg5a77l7vd4edmrxq5jco6ri\\Robot.o
+C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\3xksmtzpzh2sgwn7dzzosu1xc\\MoveDoubleSolenoid.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\42in7wupnzi1k73z8hkc0d838\\Drive.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\45vqxio4pi9nbs4dcvmcpqo1r\\RobotContainer.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\5iqfx1ejx75cdd54yfot8edwp\\ExampleCommand.o
-C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\6j7wto0rueek2iryhde1dqknr\\move_flag.o
+C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\5zod7ywujan1p55o85hkpl7z0\\MoveFlag.o
+C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\7kbtw5j4ul79djfhk27tc0a1n\\Pneumatics.o
+C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\dvdn2e7vul4eubqdfy6sytw6k\\MoveSingleSolenoid.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\e9khynllkm0mknb0l32iok6gn\\ExampleSubsystem.o
 C:\\Users\\osrobotics\\Desktop\\c++VSCode\\2021-Learning\\build\\objs\\frcUserProgram\\debug\\frcUserProgramCpp\\x3sh57fodhhczvdb5qerihz2\\DriveWithJoystick.o
 C:\\Users\\osrobotics\\.gradle\\caches\\transforms-2\\files-2.1\\9ffb2dccfd701ef9588e2188529b80d6\\wpilibc-cpp-2020.3.2-linuxathenadebug\\linux\\athena\\shared\\libwpilibcd.so

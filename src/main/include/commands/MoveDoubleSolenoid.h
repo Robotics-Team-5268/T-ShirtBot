@@ -9,10 +9,8 @@
 
 #include <frc2/command/CommandBase.h>
 #include <frc2/command/CommandHelper.h>
-#include "subsystems/Flag.h"
-#include <RobotMap.h>
-#include <frc/Talon.h>
 
+#include "subsystems/Pneumatics.h"
 
 /**
  * An example command.
@@ -21,10 +19,10 @@
  * directly; this is crucially important, or else the decorator functions in
  * Command will *not* work!
  */
-class move_flag
-    : public frc2::CommandHelper<frc2::CommandBase, move_flag> {
+class MoveDoubleSolenoid
+    : public frc2::CommandHelper<frc2::CommandBase, MoveDoubleSolenoid> {
  public:
-  move_flag(Flag* aflag);
+  MoveDoubleSolenoid(Pneumatics* mpneumatics, bool state);
 
   void Initialize() override;
 
@@ -34,5 +32,6 @@ class move_flag
 
   bool IsFinished() override;
  private:
-  Flag* mflag;
+  Pneumatics* pneumatics;
+  bool state;
 };

@@ -1,19 +1,11 @@
 See file:///C:/Users/osrobotics/Desktop/c++VSCode/2021-Learning/build/tmp/compileFrcUserProgramReleaseExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramReleaseExecutableFrcUserProgramCpp.
-compiling DriveForward.cpp successful.
+compiling MoveDoubleSolenoid.cpp successful.
 
-compiling DriveWithJoystick.cpp successful.
+compiling Pneumatics.cpp successful.
 
-compiling ExampleCommand.cpp successful.
+compiling MoveSingleSolenoid.cpp successful.
 
 compiling Robot.cpp successful.
-
-compiling move_flag.cpp successful.
-
-compiling ExampleSubsystem.cpp successful.
-
-compiling Drive.cpp successful.
-
-compiling Flag.cpp successful.
 
 compiling RobotContainer.cpp successful.
 
