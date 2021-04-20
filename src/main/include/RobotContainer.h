@@ -10,6 +10,7 @@
 #include "subsystems/Drive.h"
 #include "subsystems/Flag.h"
 #include "subsystems/Pneumatics.h"
+#include "commands/CyclePneumatics.h"
 
 class RobotContainer {
  public:
@@ -28,6 +29,5 @@ class RobotContainer {
   
   std::shared_ptr<frc::Joystick> driverJoystick;
   std::vector<frc2::JoystickButton*> driverBtns;
-
   void ConfigureButtonBindings();
 };

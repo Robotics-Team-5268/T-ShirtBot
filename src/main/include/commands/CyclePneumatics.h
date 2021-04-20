@@ -9,7 +9,7 @@
 
 #include <frc2/command/CommandBase.h>
 #include <frc2/command/CommandHelper.h>
-
+#include "commands/MoveSingleSolenoid.h"
 #include "subsystems/Pneumatics.h"
 
 /**
@@ -19,10 +19,10 @@
  * directly; this is crucially important, or else the decorator functions in
  * Command will *not* work!
  */
-class MoveSingleSolenoid
-    : public frc2::CommandHelper<frc2::CommandBase, MoveSingleSolenoid> {
+class CyclePneumatics
+    : public frc2::CommandHelper<frc2::CommandBase, CyclePneumatics> {
  public:
-  MoveSingleSolenoid(Pneumatics* mpneumatics, bool mstate, int mport);
+  CyclePneumatics(Pneumatics* mpneumatics);
 
   void Initialize() override;
 
@@ -33,6 +33,4 @@ class MoveSingleSolenoid
   bool IsFinished() override;
  private:
   Pneumatics* pneumatics;
-  bool state;
-  int port;
 };

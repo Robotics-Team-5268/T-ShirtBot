@@ -1,26 +1,4 @@
-See file:///C:/Users/osrobotics/Desktop/c++VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
-compiling ExampleCommand.cpp successful.
+See file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling CyclePneumatics.cpp successful.
 
-compiling DriveForward.cpp successful.
-
-compiling DriveWithJoystick.cpp successful.
-
-compiling MoveSingleSolenoid.cpp successful.
-
-compiling Robot.cpp successful.
-
-compiling RobotContainer.cpp successful.
-
-compiling ExampleSubsystem.cpp successful.
-
-compiling Pneumatics.cpp successful.
-
-compiling Drive.cpp successful.
-
-compiling Flag.cpp successful.
-
-compiling MoveFlag.cpp successful.
-
-compiling MoveDoubleSolenoid.cpp successful.
-
-Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Desktop/c++VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

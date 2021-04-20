@@ -5,32 +5,35 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "commands/MoveSingleSolenoid.h"
+#include "commands/CyclePneumatics.h"
 
-MoveSingleSolenoid::MoveSingleSolenoid(Pneumatics* mpneumatics, bool mstate, int mport) 
-: pneumatics(mpneumatics),
-state(mstate),
-port(mport)
+CyclePneumatics::CyclePneumatics(Pneumatics* mpneumatics) 
+: pneumatics(mpneumatics)
 {
-  SetName("MoveSingleSolenoid");
+  // Use addRequirements() here to declare subsystem dependencies.
+  SetName("CyclePneumatics");
   AddRequirements(pneumatics);
 }
 
 // Called when the command is initially scheduled.
-void MoveSingleSolenoid::Initialize() {}
+void CyclePneumatics::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
-void MoveSingleSolenoid::Execute() {
-  if(state){
-    pneumatics->Single_Solenoid_On(port);
+void CyclePneumatics::Execute() {
+  if (pneumatics->cycle > 6){
+    pneumatics->cycle = 1;
   }
-  else{
-    pneumatics->Single_Solenoid_Off(port);
-  }
+  MoveSingleSolenoid(pneumatics, true, pneumatics->cycle);
+  std::chrono::seconds(1);
+  MoveSingleSolenoid(pneumatics, false, pneumatics->cycle);
+  pneumatics->cycle +=  1;
+}
+// Called once the command ends or is interrupted.
+void CyclePneumatics::End(bool interrupted) {
+
 }
 
-// Called once the command ends or is interrupted.
-void MoveSingleSolenoid::End(bool interrupted) {}
-
 // Returns true when the command should end.
-bool MoveSingleSolenoid::IsFinished() { return false; }
+bool CyclePneumatics::IsFinished() {
+   return false; 
+}
