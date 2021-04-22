@@ -26,7 +26,7 @@ void RobotContainer::ConfigureButtonBindings() {
   driverBtns[3]->WhenPressed(new MoveDoubleSolenoid(&mpneumatics, false));// moves double solenoid backward
   driverBtns[4]->WhenPressed(new MoveSingleSolenoid(&mpneumatics, true, 1)); // turns single solenoid on
   driverBtns[5]->WhenPressed(new MoveSingleSolenoid(&mpneumatics, false, 1));
-  driverBtns[6]->WhenPressed(new CyclePneumatics(&mpneumatics));
+  driverBtns[6]->WhenPressed(new CyclePneumatics());
 
 
 }

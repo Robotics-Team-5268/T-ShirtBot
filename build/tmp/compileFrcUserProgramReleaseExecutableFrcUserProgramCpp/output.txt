@@ -1,4 +1,8 @@
 See file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramReleaseExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramReleaseExecutableFrcUserProgramCpp.
+compiling Robot.cpp successful.
+
+compiling RobotContainer.cpp successful.
+
 compiling CyclePneumatics.cpp successful.
 
 Finished compileFrcUserProgramReleaseExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramReleaseExecutableFrcUserProgramCpp/output.txt.

@@ -9,7 +9,6 @@
 
 #include <frc2/command/CommandBase.h>
 #include <frc2/command/CommandHelper.h>
-#include "commands/MoveSingleSolenoid.h"
 #include "subsystems/Pneumatics.h"
 
 /**
@@ -22,7 +21,7 @@
 class CyclePneumatics
     : public frc2::CommandHelper<frc2::CommandBase, CyclePneumatics> {
  public:
-  CyclePneumatics(Pneumatics* mpneumatics);
+  CyclePneumatics();
 
   void Initialize() override;
 
