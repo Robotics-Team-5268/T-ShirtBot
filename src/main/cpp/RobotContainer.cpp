@@ -1,8 +1,7 @@
 
 #include "RobotContainer.h"
-#include "commands/MoveFlag.h"
+#include "commands/MoveArm.h"
 #include "commands/DriveWithJoystick.h"
-#include "commands/DriveForward.h"
 #include "commands/MoveDoubleSolenoid.h"
 #include "commands/MoveSingleSolenoid.h"
 
@@ -20,8 +19,7 @@ RobotContainer::RobotContainer() : AutonomousCommand(&subsystem) {
 
 void RobotContainer::ConfigureButtonBindings() {
   // Configure your button bindings here
-  driverBtns[0]->WhileHeld(new MoveFlag(&mflag));
-  driverBtns[1]->WhileHeld(new DriveForward(&drive)); 
+  driverBtns[0]->WhileHeld(new MoveArm(&mArm));
   driverBtns[2]->WhenPressed(new MoveDoubleSolenoid(&mpneumatics, true));// moves double solenoid forward
   driverBtns[3]->WhenPressed(new MoveDoubleSolenoid(&mpneumatics, false));// moves double solenoid backward
   driverBtns[4]->WhenPressed(new MoveSingleSolenoid(&mpneumatics, true, 1)); // turns single solenoid on

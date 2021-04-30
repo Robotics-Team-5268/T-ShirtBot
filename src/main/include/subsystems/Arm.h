@@ -10,11 +10,10 @@
 #include <frc2/command/SubsystemBase.h>
 #include <ctre/Phoenix.h>
 #include "RobotMap.h"
-#include <frc/Talon.h>
 
-class Flag : public frc2::SubsystemBase {
+class Arm : public frc2::SubsystemBase {
  public:
-  Flag();
+  Arm();
   void Move(double percent);
   /**
    * Will be called periodically whenever the CommandScheduler runs.
@@ -22,7 +21,7 @@ class Flag : public frc2::SubsystemBase {
   void Periodic();
 
  private:
-  frc::Talon motor{TALON_MOTOR};
+  WPI_VictorSPX motor{ARM_MOTOR};
 
   // Components (e.g. motor controllers and sensors) should generally be
   // declared private and exposed only through public methods.

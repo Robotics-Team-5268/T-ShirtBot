@@ -1,8 +1,88 @@
-See file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+See file:///C:/Users/osrobotics/Downloads/T-ShirtBot-master/T-ShirtBot-master/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
 compiling CyclePneumatics.cpp successful.
 
-compiling RobotContainer.cpp successful.
+compiling ExampleCommand.cpp successful.
+
+compiling DriveWithJoystick.cpp successful.
+
+compiling MoveSingleSolenoid.cpp successful.
 
 compiling Robot.cpp successful.
 
-Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
+compiling RobotContainer.cpp successful.
+
+compiling ExampleSubsystem.cpp successful.
+
+compiling Pneumatics.cpp successful.
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp: In member function 'void Pneumatics::Single_Solenoid_Off(int)':
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:20:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid1.Set(false);
+             ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:21:9: note: here
+         case 2:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:22:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid2.Set(false);
+             ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:23:9: note: here
+         case 3:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:24:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid3.Set(false);
+             ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:25:9: note: here
+         case 4:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:26:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid4.Set(false);
+             ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:27:9: note: here
+         case 5:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:28:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid5.Set(false);
+             ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:29:9: note: here
+         case 6:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp: In member function 'void Pneumatics::Single_Solenoid_On(int)':
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:41:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid1.Set(true);
+             ~~~~~~~~~~~~~~^~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:42:9: note: here
+         case 2:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:43:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid2.Set(true);
+             ~~~~~~~~~~~~~~^~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:44:9: note: here
+         case 3:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:45:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid3.Set(true);
+             ~~~~~~~~~~~~~~^~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:46:9: note: here
+         case 4:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:47:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid4.Set(true);
+             ~~~~~~~~~~~~~~^~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:48:9: note: here
+         case 5:
+         ^~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:49:27: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             ssolenoid5.Set(true);
+             ~~~~~~~~~~~~~~^~~~~~
+C:\Users\osrobotics\Downloads\T-ShirtBot-master\T-ShirtBot-master\src\main\cpp\subsystems\Pneumatics.cpp:50:9: note: here
+         case 6:
+         ^~~~
+
+compiling Arm.cpp successful.
+
+compiling Drive.cpp successful.
+
+compiling MoveDoubleSolenoid.cpp successful.
+
+compiling MoveArm.cpp successful.
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/osrobotics/Downloads/T-ShirtBot-master/T-ShirtBot-master/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

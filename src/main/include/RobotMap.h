@@ -10,7 +10,7 @@
 #define SCFR_INVERTED false
 #define SCBR_INVERTED false
 
-#define TALON_MOTOR 0
+#define ARM_MOTOR 0
 
 #define PCM 0
 

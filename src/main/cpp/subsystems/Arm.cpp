@@ -5,15 +5,15 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "subsystems/Flag.h"
+#include "subsystems/Arm.h"
 
-Flag::Flag() {
-    SetName( "Flag" );
+Arm::Arm() {
+    SetName( "Arm" );
 }
 
-void Flag::Move(double percent){
+void Arm::Move(double percent){
     motor.Set(percent);
 }
 
 // This method will be called once per scheduler run
-void Flag::Periodic() {}
+void Arm::Periodic() {}

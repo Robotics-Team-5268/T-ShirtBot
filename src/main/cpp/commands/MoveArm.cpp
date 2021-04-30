@@ -5,30 +5,27 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-#include "commands/DriveForward.h"
+#include "commands/MoveArm.h"
 
-
-DriveForward::DriveForward(Drive* idrive) 
-: drive( idrive )
-{
-  SetName( "DriveForward" );
-  AddRequirements( drive );
+MoveArm::MoveArm( Arm* aArm )
+    : mArm( aArm ) {
   // Use addRequirements() here to declare subsystem dependencies.
+  SetName( "MoveArm" );
+   AddRequirements( mArm );
 }
 
 // Called when the command is initially scheduled.
-void DriveForward::Initialize() {}
+void MoveArm::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
-void DriveForward::Execute() {
-  drive->Acceleration(1.0, 1.0);
-
+void MoveArm::Execute() {
+  mArm->Move(1.0);
 }
 
 // Called once the command ends or is interrupted.
-void DriveForward::End(bool interrupted) {
-  drive->Acceleration(0.0, 0.0);
+void MoveArm::End(bool interrupted) {
+  mArm->Move(0.0);
 }
 
 // Returns true when the command should end.
-bool DriveForward::IsFinished() { return false; }
+bool MoveArm::IsFinished() { return false; }

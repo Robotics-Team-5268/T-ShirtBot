@@ -8,7 +8,7 @@
 #include "commands/ExampleCommand.h"
 #include "subsystems/ExampleSubsystem.h"
 #include "subsystems/Drive.h"
-#include "subsystems/Flag.h"
+#include "subsystems/Arm.h"
 #include "subsystems/Pneumatics.h"
 #include "commands/CyclePneumatics.h"
 
@@ -24,7 +24,7 @@ class RobotContainer {
   ExampleCommand AutonomousCommand;
 
   Drive drive;
-  Flag mflag;
+  Arm mArm;
   Pneumatics mpneumatics;
   
   std::shared_ptr<frc::Joystick> driverJoystick;

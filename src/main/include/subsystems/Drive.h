@@ -7,7 +7,6 @@
 #include <RobotMap.h>
 
 
-#include <frc/Talon.h>
 
 
 class Drive : public frc2::SubsystemBase {
@@ -19,12 +18,12 @@ class Drive : public frc2::SubsystemBase {
 	void Periodic();
 
  private:
-  	WPI_TalonSRX speedControllerFL{DRIVE_SPEED_CONTROLLER_FL_CHANNEL};
-	WPI_TalonSRX speedControllerBL{DRIVE_SPEED_CONTROLLER_BL_CHANNEL};
+  	WPI_VictorSPX speedControllerFL{DRIVE_SPEED_CONTROLLER_FL_CHANNEL};
+	WPI_VictorSPX speedControllerBL{DRIVE_SPEED_CONTROLLER_BL_CHANNEL};
 	frc::SpeedControllerGroup LeftSC{speedControllerFL, speedControllerBL};
 
-	WPI_TalonSRX speedControllerFR{DRIVE_SPEED_CONTROLLER_FR_CHANNEL};
-	WPI_TalonSRX speedControllerBR{DRIVE_SPEED_CONTROLLER_BR_CHANNEL};
+	WPI_VictorSPX speedControllerFR{DRIVE_SPEED_CONTROLLER_FR_CHANNEL};
+	WPI_VictorSPX speedControllerBR{DRIVE_SPEED_CONTROLLER_BR_CHANNEL};
 	frc::SpeedControllerGroup RightSC{speedControllerFR, speedControllerBR};
 
 	frc::DifferentialDrive diffDrive{LeftSC, RightSC};

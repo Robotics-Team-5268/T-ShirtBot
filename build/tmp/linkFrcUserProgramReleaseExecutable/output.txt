@@ -1,4 +1,4 @@
-See file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt for all output for linkFrcUserProgramReleaseExecutable.
+See file:///C:/Users/osrobotics/Downloads/T-ShirtBot-master/T-ShirtBot-master/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt for all output for linkFrcUserProgramReleaseExecutable.
 linking frcUserProgram successful.
 
-Finished linkFrcUserProgramReleaseExecutable, see full log file:///C:/Users/osrobotics/Documents/VSCode/2021-Learning/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt.
+Finished linkFrcUserProgramReleaseExecutable, see full log file:///C:/Users/osrobotics/Downloads/T-ShirtBot-master/T-ShirtBot-master/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt.
