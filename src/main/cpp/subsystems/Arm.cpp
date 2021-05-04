@@ -12,8 +12,14 @@ Arm::Arm() {
 }
 
 void Arm::Move(double percent){
-    motor.Set(percent);
-}
+    if (!toplimitSwitch.Get() || 
+        !bottomlimitSwitch.Get()){
+            motor.Set(percent);
+        }
+    else{
+        motor.Set(0);
+    }
+    }
 
 // This method will be called once per scheduler run
 void Arm::Periodic() {}

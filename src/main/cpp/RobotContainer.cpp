@@ -19,7 +19,8 @@ RobotContainer::RobotContainer() : AutonomousCommand(&subsystem) {
 
 void RobotContainer::ConfigureButtonBindings() {
   // Configure your button bindings here
-  driverBtns[0]->WhileHeld(new MoveArm(&mArm));
+  driverBtns[0]->WhileHeld(new MoveArm(&mArm, 1.0));
+  driverBtns[1]->WhileHeld(new MoveArm(&mArm, -1.0));
   driverBtns[2]->WhenPressed(new MoveDoubleSolenoid(&mpneumatics, true));// moves double solenoid forward
   driverBtns[3]->WhenPressed(new MoveDoubleSolenoid(&mpneumatics, false));// moves double solenoid backward
   driverBtns[4]->WhenPressed(new MoveSingleSolenoid(&mpneumatics, true, 1)); // turns single solenoid on

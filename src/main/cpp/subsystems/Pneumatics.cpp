@@ -18,18 +18,24 @@ void Pneumatics::Single_Solenoid_Off(int port)
     {
         case 1:
             ssolenoid1.Set(false);
+            break;
         case 2:
             ssolenoid2.Set(false);
+            break;
         case 3:
             ssolenoid3.Set(false);
+            break;
         case 4:
             ssolenoid4.Set(false);
+            break;
         case 5:
             ssolenoid5.Set(false);
+            break;
         case 6:
             ssolenoid6.Set(false);
+            break;
         default:
-        break;
+            break;
     }
 }
 
@@ -39,18 +45,24 @@ void Pneumatics::Single_Solenoid_On(int port)
     {
         case 1:
             ssolenoid1.Set(true);
+            break;
         case 2:
             ssolenoid2.Set(true);
+            break;
         case 3:
             ssolenoid3.Set(true);
+            break;
         case 4:
             ssolenoid4.Set(true);
+            break;
         case 5:
             ssolenoid5.Set(true);
+            break;
         case 6:
             ssolenoid6.Set(true);
+            break;
         default:
-        break;
+            break;
     }
 }
 

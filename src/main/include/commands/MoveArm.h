@@ -24,7 +24,7 @@
 class MoveArm
     : public frc2::CommandHelper<frc2::CommandBase, MoveArm> {
  public:
-  MoveArm(Arm* aArm);
+  MoveArm(Arm* aArm, double ispeed);
 
   void Initialize() override;
 
@@ -35,4 +35,5 @@ class MoveArm
   bool IsFinished() override;
  private:
   Arm* mArm;
+  double speed;
 };

@@ -7,8 +7,9 @@
 
 #include "commands/MoveArm.h"
 
-MoveArm::MoveArm( Arm* aArm )
-    : mArm( aArm ) {
+MoveArm::MoveArm( Arm* aArm, double ispeed)
+    : mArm( aArm ),
+    speed(ispeed) {
   // Use addRequirements() here to declare subsystem dependencies.
   SetName( "MoveArm" );
    AddRequirements( mArm );
@@ -19,7 +20,7 @@ void MoveArm::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
 void MoveArm::Execute() {
-  mArm->Move(1.0);
+  mArm->Move(speed);
 }
 
 // Called once the command ends or is interrupted.

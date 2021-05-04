@@ -10,7 +10,7 @@
 #include <frc2/command/SubsystemBase.h>
 #include <ctre/Phoenix.h>
 #include "RobotMap.h"
-
+#include <frc/DigitalInput.h>
 class Arm : public frc2::SubsystemBase {
  public:
   Arm();
@@ -22,7 +22,8 @@ class Arm : public frc2::SubsystemBase {
 
  private:
   WPI_VictorSPX motor{ARM_MOTOR};
-
+  frc::DigitalInput toplimitSwitch{TOP_LIMIT_SWITCH};
+  frc::DigitalInput bottomlimitSwitch{BOTTOM_LIMIT_SWITCH};
   // Components (e.g. motor controllers and sensors) should generally be
   // declared private and exposed only through public methods.
 };
